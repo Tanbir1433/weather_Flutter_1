@@ -123,7 +123,7 @@ class _WelcomScreenState extends State<WelcomScreen> {
         ),
         Text(
           _weather?.weatherDescription ?? "",
-          style: TextStyle(color: Colors.black, fontSize: 30),
+          style: const TextStyle(color: Colors.black, fontSize: 30),
         ),
       ],
     );
@@ -132,7 +132,7 @@ class _WelcomScreenState extends State<WelcomScreen> {
   Widget _currentTemp() {
     return Text(
       "${_weather?.temperature?.celsius?.toStringAsFixed(0)}° C",
-      style: TextStyle(
+      style: const TextStyle(
           color: Colors.black, fontWeight: FontWeight.w500, fontSize: 90),
     );
   }
@@ -145,7 +145,7 @@ class _WelcomScreenState extends State<WelcomScreen> {
         color: Colors.deepPurpleAccent,
         borderRadius: BorderRadius.circular(20),
       ),
-      padding: EdgeInsets.all(
+      padding: const EdgeInsets.all(
         8.0,
       ),
       child: Column(
@@ -159,11 +159,11 @@ class _WelcomScreenState extends State<WelcomScreen> {
             children: [
               Text(
                 "Max: ${_weather?.tempMax?.celsius?.toStringAsFixed(0)}° C",
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: const TextStyle(color: Colors.white, fontSize: 15),
               ),
               Text(
                 "MIN: ${_weather?.tempMin?.celsius?.toStringAsFixed(0)}° C",
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: const TextStyle(color: Colors.white, fontSize: 15),
               ),
             ],
           ),
@@ -174,11 +174,11 @@ class _WelcomScreenState extends State<WelcomScreen> {
             children: [
               Text(
                 "Wind: ${_weather?.windSpeed?.toStringAsFixed(0)}m/s",
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: const TextStyle(color: Colors.white, fontSize: 15),
               ),
               Text(
                 "Humidity: ${_weather?.humidity?.toStringAsFixed(0)}%",
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: const TextStyle(color: Colors.white, fontSize: 15),
               ),
             ],
           ),
